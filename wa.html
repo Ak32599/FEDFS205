@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration Form</title>
+</head>
+<body>
+    <form action="registration_form.html">
+        <caption> Student registration system</caption>
+        <br><br>
+        <div class="form-group">
+        <label for="fn">First Name:</label>
+        <input type="text" id="fn" name="firstname" required>
+        </div><br>
+        <label for="fn">Last name:</label>
+        <input type="text" id="ln" name="lastname" required><br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" required>Male
+        <input type="radio" name="gender" value="female" required>Female<br>
+        <label>Email:</label>
+        <input type="email" required><br>
+        <label>Contact number:</label>
+        <input type="tel" pattern="[0-9]{10}"><br>
+        <label>Date of birth:</label>
+        <input type="date" required><br>
+        <label>Address:</label>
+        <textarea rows="10"></textarea><br>
+        <label>Languages known:</label>
+        <input type="checkbox" value="telugu">Telugu
+        <input type="checkbox" value="english">English
+        <input type="checkbox" value="hindi">Hindi
+        <input type="checkbox" value="japanese">japanese
+        <input type="checkbox" value="france">France
+        <input type="checkbox" value="spanish">Spanish<br>
+        <label>Select branch:</label>
+        <select required>
+            <option value="">---select</option>
+            <option value="cse">CSE</option>
+            <option value="ece">ECE</option>
+            <option value="csit">CSIT</option>
+            <option value="mech">Mech</option>
+        </select><br>
+        <label>Upload resume:</label>
+        <input type="file" required><br>
+        <button>Submit</button>
+
+    </form>
+</body>
+</html>

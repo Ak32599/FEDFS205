@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>For loop</title>
+</head>
+<body>
+    <script>
+        let num=[10,20,30,40];
+        document.write(typeof num);
+        //1. stnadard for loop
+        document.write("<h2>1. Standard for loop</h2>");
+        for(let i=0;i<num.length;i++){
+            document.write("Index "+i+" = "+num[i]+"<br>");
+        }
+        document.write("<br>");
+        //2. for ...in loop (iterates over indexes/keys)
+        document.write("<h2>2. For ...in loop</h2>");
+        for(let index in num){
+            document.write("Index "+index+" = "+num[index]+"<br>");
+        }
+        document.write("<br>");
+        //3. for ..of loop (iterates over values)
+        document.write("<h2>3. for..of loop</h2>");
+        for(let value of num){
+            document.write("Value = "+value+"<br>");
+        }
+        document.write("<br>");
+        //4. forEach() method (array.specific)
+        document.write("<h2>4. forEach() Method</h2>");
+        num.forEach(function(value,index){
+            document.write("Index "+index+" = "+value+"<br>");
+        });
+        document.write("<br>");
+        //Example with 
+        let stud={name:"AK",age:"19",grade:"O"};
+        document.write("<h2>5. for...in with Object</h2>");
+        for(let key in stud){
+            document.write(key+" : "+stud[key]+"<br>");
+        }
+        // for...of works on iterable Objects like arrays,strings,maps,sets
+        document.write("<h2>6. for...of with string</h2>");
+        let word="Meow";
+        for(let char of word){
+            document.write(char+"<br>");
+        }
+        //for..of works on iterable
+    </script>
+</body>
+</html>

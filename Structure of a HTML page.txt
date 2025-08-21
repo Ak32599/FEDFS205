@@ -1,0 +1,14 @@
+Structure of a HTML page
+Head, body, paragraph tags
+Text formatting using HTML
+HTML Lists
+Add images using HTML
+Add links using HTML
+HTML Tables
+Semantic HTML
+CSS Inline Styling
+CSS selectors and property
+Class and ID selector in CSS
+CSS selector specificity
+Style fonts using CSS
+Box model in CSS	

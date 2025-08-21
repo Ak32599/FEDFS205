@@ -1,0 +1,10 @@
+git init
+git config --global user.name"  "
+git config --global user.email" "
+git add .
+git commit -m "commit done!"
+git remote add origin (link)
+git push -u origin master
+
+*******************************************************
+https://github.com/Ak32599/FEDFS205.git

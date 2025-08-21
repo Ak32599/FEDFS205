@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=100;
+        document.write(x,"<br>");
+        var x=200;
+        document.write(x+x,"<br>");
+        let y=300;
+        document.write(y,"<br>");
+       // let y=500;
+        //document.write(y,"<br>"); here it will not show output due to let decl it works like const concept in c++
+        var z=30;//local declaration
+        document.write(z,"<br>");
+        {
+//            var z=40; here var dec changes the value of z completly thorugh the code but let doesn't do it
+//            document.write(z,"<br>"); this is called "Global polluting issue"
+            let z=40;// works as local declaration
+            document.write(z,"<br>");
+        }
+        document.write(z,"<br>");
+        const i=25;
+        document.write(i,"<br>");
+       // const i=35;
+        //document.write(i,"<br>"); under the same line of same scope we can't declare a let or const which helps to prevent the duplication
+        {
+            const i=45;
+            document.write(i,"<br>");
+        }
+        let c=true;
+        let a=10;
+        let b=0.2;
+        let d="Ak";
+        let e=null;
+        document.write(typeof(a),"<br>");
+        document.write(typeof(b),"<br>");
+        document.write(typeof(c),"<br>");
+        document.write(typeof(d),"<br>");
+        document.write(typeof(e),"<br>");
+        //12-02-25
+        document.write(typeof(m,"<br>"));
+        var m=50;
+        document.write(m);
+        function kl_fun()
+        {
+            return "this is simple function from function klu";
+        }
+        document.write(kl_fun(),"<br>");
+        document.write(typeof 100,"<br>");
+        document.write(typeof 12.567,"<br>");
+        document.write(typeof "akhilesh","<br>");
+        document.write(typeof [],"<br>");
+        document.write(typeof {},"<br>");
+        document.write(typeof kl_fun(),"<br>");
+        document.write(typeof false,"<br>");
+        document.write(typeof {},"<br>");
+        document.write(typeof kl_fun(),"<br>");
+        document.write(typeof 100n,"<br>");
+        var m=50;
+        document.write(m,"<br>");
+        m+=10;//m%=10,m-=10,
+        document.write(m,"<br>");
+        n=5;
+        n++;
+        document.write(n,"<br>");
+        
+    </script>
+    
+</body>
+</html>
